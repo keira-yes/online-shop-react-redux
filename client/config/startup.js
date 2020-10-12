@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
-import Header from '../components/header'
+import Header from '../components/header/header'
 
 const Startup = (props) => {
   useEffect(() => {}, [])

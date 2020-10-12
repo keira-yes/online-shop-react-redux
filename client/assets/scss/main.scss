@@ -6,3 +6,7 @@
 /* purgecss end ignore */
 
 @tailwind utilities;
+
+body {
+  @apply font-main font-light text-primary-200;
+}

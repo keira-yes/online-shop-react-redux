@@ -5,7 +5,7 @@ const Dummy = () => {
   return (
     <div>
       <Head title="Hello" />
-      <div className="container text-accent-200 bg-accent-100 font-main font-light">
+      <div className="container text-accent-200 bg-accent-100">
         Magna veniam duis id quis quis esse incididunt commodo commodo. Occaecat culpa amet et irure
         nostrud cupidatat esse consectetur non ex. Proident labore est enim et deserunt id
         consectetur ut sunt. Dolor magna officia fugiat cupidatat. Sint aliquip consequat
