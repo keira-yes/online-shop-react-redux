@@ -1,10 +1,15 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
+import Header from '../components/header'
 
 const Startup = (props) => {
   useEffect(() => {}, [])
-
-  return props.children
+  return (
+    <>
+      <Header />
+      {props.children}
+    </>
+  )
 }
 
 Startup.propTypes = {
