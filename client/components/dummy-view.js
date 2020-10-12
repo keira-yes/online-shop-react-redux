@@ -5,10 +5,12 @@ const Dummy = () => {
   return (
     <div>
       <Head title="Hello" />
-      <div className="flex items-center justify-center h-screen">
-        <div className="bg-indigo-800 hover:text-red-500 text-white font-bold rounded-lg border shadow-lg p-10">
-          This is dummy component
-        </div>
+      <div className="container text-accent-200 bg-accent-100 font-main font-light">
+        Magna veniam duis id quis quis esse incididunt commodo commodo. Occaecat culpa amet et irure
+        nostrud cupidatat esse consectetur non ex. Proident labore est enim et deserunt id
+        consectetur ut sunt. Dolor magna officia fugiat cupidatat. Sint aliquip consequat
+        adipisicing nisi nulla commodo enim pariatur anim velit. Ipsum laboris ea minim ex enim
+        occaecat sint id in. Culpa ullamco deserunt est veniam id veniam.
       </div>
     </div>
   )
