@@ -10,6 +10,8 @@ import cookieParser from 'cookie-parser'
 import config from './config'
 import Html from '../client/html'
 
+const { readFile } = require('fs').promises
+
 const Root = () => ''
 
 try {
@@ -40,6 +42,12 @@ const middleware = [
 ]
 
 middleware.forEach((it) => server.use(it))
+
+server.get('/api/v1/products', (req, res) => {
+  readFile(`${__dirname}/data.json`, { encoding: 'utf8' }).then((products) => {
+    res.json(JSON.parse(products))
+  })
+})
 
 server.use('/api/', (req, res) => {
   res.status(404)
