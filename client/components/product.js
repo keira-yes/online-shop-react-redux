@@ -1,6 +1,10 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+import { addToCart } from '../redux/reducers/products'
 
 const Product = ({ product }) => {
+  // const cart = useSelector((store) => store.products.cart)
+  const dispatch = useDispatch()
   return (
     <article className="p-5 border border-gray-200">
       <figure className="card__image h-56">
@@ -14,6 +18,7 @@ const Product = ({ product }) => {
         <button
           type="button"
           className="px-5 py-2 border-2 border-accent-100 rounded-sm bg-accent-100 text-accent-200 hover:bg-transparent transition duration-300 ease-out"
+          onClick={() => dispatch(addToCart(product))}
         >
           Add to cart
         </button>
